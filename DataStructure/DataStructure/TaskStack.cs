@@ -14,5 +14,7 @@ namespace DataStructure
             node.nextNode = nodeHead;
             nodeHead = node;
         }
+
+
     }
 }
