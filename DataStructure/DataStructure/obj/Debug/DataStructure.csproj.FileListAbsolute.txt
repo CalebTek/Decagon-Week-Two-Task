@@ -1,0 +1,8 @@
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Decagon\week-2-CalebTek\DataStructure\DataStructure\bin\Debug\DataStructure.exe.config
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Decagon\week-2-CalebTek\DataStructure\DataStructure\bin\Debug\DataStructure.exe
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Decagon\week-2-CalebTek\DataStructure\DataStructure\bin\Debug\DataStructure.pdb
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Decagon\week-2-CalebTek\DataStructure\DataStructure\obj\Debug\DataStructure.csproj.AssemblyReference.cache
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Decagon\week-2-CalebTek\DataStructure\DataStructure\obj\Debug\DataStructure.csproj.SuggestedBindingRedirects.cache
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Decagon\week-2-CalebTek\DataStructure\DataStructure\obj\Debug\DataStructure.csproj.CoreCompileInputs.cache
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Decagon\week-2-CalebTek\DataStructure\DataStructure\obj\Debug\DataStructure.exe
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Decagon\week-2-CalebTek\DataStructure\DataStructure\obj\Debug\DataStructure.pdb

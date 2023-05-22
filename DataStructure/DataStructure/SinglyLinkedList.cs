@@ -14,7 +14,7 @@ namespace DataStructure
     internal class SinglyLinkedList <T>
     {
         public SinglyNode<T> nodeHead;
-        private int listSize;
+        public int listSize;
 
 
         public int Add(T Rvalue)
@@ -37,5 +37,31 @@ namespace DataStructure
             return listSize;
         }
         
+        public bool Remove(T Rvalue)
+        {
+            if (nodeHead == null)
+            {  return false; }
+            if (nodeHead.Tvalue.Equals(Rvalue))
+            {
+                nodeHead = nodeHead.nextNode;
+                listSize--;
+                return true;
+            }
+            var currentNode = nodeHead;
+            while (!(currentNode.nextNode == null))
+            {
+                if (currentNode.nextNode.Tvalue.Equals(Rvalue))
+                {
+                    currentNode = currentNode.nextNode;
+                    listSize--;
+                    return true;
+                }
+                currentNode = currentNode.nextNode;
+            }
+            return false;
+        }
+        
+        
+
     }
 }
