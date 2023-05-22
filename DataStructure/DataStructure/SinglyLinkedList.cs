@@ -61,6 +61,21 @@ namespace DataStructure
             return false;
         }
         
+        public bool Check(T Rvalue)
+        {
+            var currentNode = nodeHead;
+            while (!(currentNode == null))
+            {
+                if (currentNode.Tvalue.Equals(Rvalue))
+                {
+                    return true;
+                }
+                currentNode = currentNode.nextNode;
+            }
+            return false;
+        }
+
+
         
 
     }
