@@ -15,6 +15,15 @@ namespace DataStructure
             nodeHead = node;
         }
 
-
+        public T Pop()
+        {
+            if (nodeHead == null)
+            {
+                throw new InvalidOperationException("Empty stack");
+            }
+            var nodeValue = nodeHead.Tvalue;
+            nodeHead = nodeHead.nextNode;
+            return nodeValue;
+        }
     }
 }

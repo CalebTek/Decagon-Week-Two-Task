@@ -22,6 +22,11 @@ namespace DataStructure
             Console.WriteLine(node.Index(2));
 
             Console.ReadLine();
+
+            var nodeStack = new TaskStack<int>();
+            nodeStack.Push(1);
+            nodeStack.Push(2);
+            nodeStack.Push(3);
         }
     }
 }
