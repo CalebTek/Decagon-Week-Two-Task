@@ -9,7 +9,7 @@ namespace DataStructure
     internal class TaskQueue<T> : SinglyLinkedList<T>
     {
         private SinglyNode<T> nodeTail;
-
+        private int queueSize = 0;
         public void Enqueue(T Rvalue)
         {
             var node = new SinglyNode<T> { Tvalue = Rvalue };
@@ -24,6 +24,7 @@ namespace DataStructure
                 nodeTail.nextNode = node;
                 nodeTail = node;
             }
+            queueSize++;
         }
 
         public T Dequeue()
@@ -34,11 +35,13 @@ namespace DataStructure
             }
             var nodeValue = nodeHead.Tvalue;
             nodeHead = nodeHead.nextNode;
+            queueSize--;
             return nodeValue;
         }
 
         public bool IsEmpty() { return nodeHead == null;  }
-       
+        
+        public int Size() { return queueSize; }
         
     }
 }

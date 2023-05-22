@@ -46,6 +46,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SinglyLinkedList.cs" />
+    <Compile Include="TaskQueue.cs" />
     <Compile Include="TaskStack.cs" />
   </ItemGroup>
   <ItemGroup>
