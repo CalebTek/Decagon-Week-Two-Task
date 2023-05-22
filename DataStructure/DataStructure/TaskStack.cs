@@ -2,7 +2,7 @@
 
 namespace DataStructure
 {
-    internal class TaskStack<T> : SinglyLinkedList<T>
+    internal class TaskStack<T> : SinglyNode<T>
     {
         private int stackSize = 0;
         public void Push(T Rvalue)

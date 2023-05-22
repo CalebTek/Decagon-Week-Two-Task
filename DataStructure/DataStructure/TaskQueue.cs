@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataStructure
 {
-    internal class TaskQueue<T> : SinglyLinkedList<T>
+    internal class TaskQueue<T> : SinglyNode<T>
     {
-        private SinglyNode<T> nodeTail;
         private int queueSize = 0;
         public void Enqueue(T Rvalue)
         {

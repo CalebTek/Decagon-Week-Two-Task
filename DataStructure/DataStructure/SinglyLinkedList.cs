@@ -1,14 +1,8 @@
 ﻿
 namespace DataStructure
 {
-    internal class SinglyNode<T>
+    internal class SinglyLinkedList <T> : SinglyNode<T>
     {
-        public T Tvalue { get; set; }
-        public SinglyNode<T> nextNode { get; set; }
-    }
-    internal class SinglyLinkedList <T>
-    {
-        public SinglyNode<T> nodeHead;
         private int listSize;
 
 
