@@ -75,8 +75,20 @@ namespace DataStructure
             return false;
         }
 
-
-        
+        public int Index(T Rvalue)
+        {
+            var nodeIndex = 0; var currentNode = nodeHead;
+            while (!(currentNode == null))
+            {
+                if (currentNode.Tvalue.Equals(Rvalue))
+                {
+                    return nodeIndex;
+                }
+                nodeIndex++;
+                currentNode = currentNode.nextNode;
+            }
+            return -1;
+        }
 
     }
 }
