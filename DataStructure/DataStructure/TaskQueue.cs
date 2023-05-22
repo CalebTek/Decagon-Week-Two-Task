@@ -37,6 +37,7 @@ namespace DataStructure
             return nodeValue;
         }
 
+        public bool IsEmpty() { return nodeHead == null;  }
        
         
     }
