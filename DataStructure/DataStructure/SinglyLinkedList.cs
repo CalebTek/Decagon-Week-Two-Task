@@ -14,7 +14,7 @@ namespace DataStructure
     internal class SinglyLinkedList <T>
     {
         public SinglyNode<T> nodeHead;
-        public int listSize;
+        private int listSize;
 
 
         public int Add(T Rvalue)
@@ -89,6 +89,8 @@ namespace DataStructure
             }
             return -1;
         }
+
+        public int Count() { return listSize; }
 
     }
 }
