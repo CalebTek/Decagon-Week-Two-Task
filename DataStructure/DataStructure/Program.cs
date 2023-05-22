@@ -12,9 +12,15 @@ namespace DataStructure
         {
             var node = new SinglyLinkedList<int>();
             node.Add(1);
+            Console.WriteLine(node.Check(1));
             node.Add(2);
             node.Add(3);
             Console.WriteLine(node.listSize);
+            node.Remove(1);
+            Console.WriteLine(node.listSize);
+            Console.WriteLine(node.Check(1));
+            Console.WriteLine(node.Index(2));
+
             Console.ReadLine();
         }
     }
