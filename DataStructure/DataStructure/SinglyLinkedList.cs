@@ -15,12 +15,12 @@ namespace DataStructure
             }
             else
             {
-                var currentValue = nodeHead;
-                while (!(currentValue.nextNode == null))
+                var currentNode = nodeHead;
+                while (!(currentNode.nextNode == null))
                 {
-                    currentValue = currentValue.nextNode;
+                    currentNode = currentNode.nextNode;
                 }
-                currentValue.nextNode = node;
+                currentNode.nextNode = node;
             }
             listSize++;
             return listSize;
