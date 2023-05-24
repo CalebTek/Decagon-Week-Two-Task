@@ -1,7 +1,4 @@
-﻿
-using System.Collections.Generic;
-
-namespace DataStructure
+﻿namespace DataStructure
 {
     internal class SinglyNode<T>
     {

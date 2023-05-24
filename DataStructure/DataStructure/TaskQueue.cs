@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataStructure
 {
@@ -12,16 +8,17 @@ namespace DataStructure
         public void Enqueue(T Rvalue)
         {
             var node = new SinglyNode<T> { Tvalue = Rvalue };
-            
-            if (nodeHead == null )
+
+            switch (nodeHead)
             {
-                nodeHead = node;
-                nodeTail = node;
-            }
-            else
-            {
-                nodeTail.nextNode = node;
-                nodeTail = node;
+                case null:
+                    nodeHead = node;
+                    nodeTail = node;
+                    break;
+                default:
+                    nodeTail.nextNode = node;
+                    nodeTail = node;
+                    break;
             }
             queueSize++;
         }

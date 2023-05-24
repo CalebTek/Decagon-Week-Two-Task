@@ -9,18 +9,21 @@ namespace DataStructure
         public int Add(T Rvalue)
         {
             var node = new SinglyNode<T> { Tvalue = Rvalue};
-            if (nodeHead == null)
+            switch (nodeHead)
             {
-                nodeHead = node;
-            }
-            else
-            {
-                var currentNode = nodeHead;
-                while (!(currentNode.nextNode == null))
-                {
-                    currentNode = currentNode.nextNode;
-                }
-                currentNode.nextNode = node;
+                case null:
+                    nodeHead = node;
+                    break;
+                default:
+                    {
+                        var currentNode = nodeHead;
+                        while (!(currentNode.nextNode == null))
+                        {
+                            currentNode = currentNode.nextNode;
+                        }
+                        currentNode.nextNode = node;
+                        break;
+                    }
             }
             listSize++;
             return listSize;

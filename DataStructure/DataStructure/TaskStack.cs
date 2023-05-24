@@ -8,14 +8,15 @@ namespace DataStructure
         public void Push(T Rvalue)
         {
             var node = new SinglyNode<T>() { Tvalue = Rvalue };
-            if (nodeHead == null)
+            switch (nodeHead)
             {
-                nodeHead = node;
-            }
-            else
-            {
-                node.nextNode = nodeHead;
-                nodeHead = node;
+                case null:
+                    nodeHead = node;
+                    break;
+                default:
+                    node.nextNode = nodeHead;
+                    nodeHead = node;
+                    break;
             }
             stackSize++;
         }
